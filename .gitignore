@@ -16,8 +16,6 @@ models/
 *.caption
 photos/*.txt
 
-# Keep requirements.txt
-!requirements.txt
 
 # Logs
 logs/

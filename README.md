@@ -1,6 +1,6 @@
 # SDXL Dataset Tagging Assistant 🚀
 
-A lightweight, high-performance tool developed to automate and curate image tagging for SDXL (Stable Diffusion XL) fine-tuning. Optimized for NVIDIA GPUs (RTX 3060+) and Ubuntu/Linux environments.
+A lightweight, high-performance tool developed to automate and curate image tagging for SDXL (Stable Diffusion XL) fine-tuning.
 
 ## Features
 
@@ -24,13 +24,13 @@ A lightweight, high-performance tool developed to automate and curate image tagg
 
 ### Prerequisites
 - Python 3.10+
-- NVIDIA GPU with CUDA drivers installed (e.g., RTX 3060)
+- NVIDIA GPU with CUDA drivers installed
 
 ### Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/[your-username]/SDXL-Dataset-Tool.git
-   cd SDXL-Dataset-Tool
+   git clone https://github.com/hasancl/SDXL-Dataset-Tagger.git
+   cd SDXL-Dataset-Tagger
    ```
 
 2. Create a virtual environment and install dependencies:
@@ -60,7 +60,7 @@ A lightweight, high-performance tool developed to automate and curate image tagg
 - `dataset_tool.py`: Main application logic.
 - `requirements.txt`: Python package dependencies.
 - `models/`: Local storage for downloaded AI models (created on first run).
-- `photos/`: Example/Input folder for your images.
+- `images/`: Example/Input folder for your images.
 
 ## License
 MIT

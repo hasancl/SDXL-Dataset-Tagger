@@ -402,7 +402,7 @@ with gr.Blocks(title="Dataset Tagging Assistant") as demo:
     
     with gr.Tab("1. Auto Tagging"):
         with gr.Row():
-            folder_input = gr.Textbox(label="Images Folder Path", value="photos", placeholder="C:/path/to/img")
+            folder_input = gr.Textbox(label="Images Folder Path", value="images", placeholder="C:/path/to/img")
             btn_process = gr.Button("Start Batch Processing", variant="primary")
         
         with gr.Row():
@@ -415,7 +415,7 @@ with gr.Blocks(title="Dataset Tagging Assistant") as demo:
         
     with gr.Tab("2. Curation & Merge"):
         with gr.Row():
-            curation_path = gr.Textbox(label="Images Folder Path", value="photos")
+            curation_path = gr.Textbox(label="Images Folder Path", value="images")
             btn_load = gr.Button("Load Folder")
             chk_delete_blip = gr.Checkbox(label="Clean up Metadata (.caption & .wd14) after Save", value=True)
         
