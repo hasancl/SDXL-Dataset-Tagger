@@ -17,6 +17,35 @@ A lightweight, high-performance tool developed to automate and curate image tagg
 - **Metadata Cleanup**: Option to automatically delete `.caption` and `.wd14` files after saving, leaving only `image.png` + `image.txt`.
 - **Completion Status**: Clear notification when all images have been processed.
 
+### 📝 Edit Captions (Tab 3) - NEW!
+Advanced caption editing and bulk operations for your dataset.
+
+#### Caption Editor
+- **Image-by-Image Editing**: View image and edit its `.txt` caption side-by-side.
+- **Quick Navigation**: Previous/Next buttons and slider for fast browsing.
+- **Fixed Preview Size**: Consistent 400px image preview for better workflow.
+
+#### 🔍 Search & Replace
+- **Replace in Current**: Apply find/replace to the current caption only.
+- **Replace in ALL Files**: One-click batch replace across all `.txt` files in the folder.
+- **Case Sensitivity**: Toggle case-sensitive matching.
+
+#### 📦 Bulk Operations
+| Operation | Description |
+|-----------|-------------|
+| **Add Prefix to All** | Add text to the beginning of all captions (e.g., "masterpiece, best quality, ") |
+| **Add Suffix to All** | Add text to the end of all captions |
+| **Remove Tag from All** | Delete a specific tag from all caption files |
+| **Remove Duplicates from All** | Clean up repeated tags in all files |
+
+#### 📊 Analytics
+| Tool | Description |
+|------|-------------|
+| **Tag Frequency Analysis** | See most/least common tags across your dataset |
+| **Caption Statistics** | Total files, average tag count, missing captions, etc. |
+| **Quality Check** | Detect issues: empty, too short/long captions, format errors |
+| **Auto-Fix Common Issues** | Fix double commas, trailing commas, extra spaces automatically |
+
 ### 📁 Local Model Management
 - Models are downloaded once and managed locally in a `models/` directory for portability.
 
@@ -24,7 +53,7 @@ A lightweight, high-performance tool developed to automate and curate image tagg
 
 ### Prerequisites
 - Python 3.10+
-- NVIDIA GPU with CUDA drivers installed
+- NVIDIA GPU with CUDA drivers installed (recommended)
 
 ### Setup
 1. Clone the repository:
@@ -36,7 +65,7 @@ A lightweight, high-performance tool developed to automate and curate image tagg
 2. Create a virtual environment and install dependencies:
    ```bash
    python3 -m venv venv
-   source venv/bin/activate
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
    pip install -r requirements.txt
    ```
 
@@ -55,6 +84,10 @@ A lightweight, high-performance tool developed to automate and curate image tagg
    - Use **Auto Merge All** for quick batch processing, OR
    - Navigate image-by-image with **Save & Next** for manual curation.
    - Enable **Clean up Metadata** to keep your folder tidy (only `.png` + `.txt`).
+3. **Tab 3 (Edit Captions)**:
+   - Use **Search & Replace** to fix common tagging errors (e.g., "araffe woman" → "asian woman").
+   - Add quality prefixes/suffixes to all captions at once.
+   - Run **Quality Check** to find and fix issues in your dataset.
 
 ## Project Structure
 - `dataset_tool.py`: Main application logic.
