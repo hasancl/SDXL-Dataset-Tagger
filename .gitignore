@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.env
+
+# Models (Crucial: Large files should not be uploaded)
+models/
+
+# Datasets
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.caption
+*.txt
+
+# Logs
+logs/
+*.log
+
+# VS Code / OS
+.vscode/
+.DS_Store
+Thumbs.db
