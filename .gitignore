@@ -8,13 +8,16 @@ venv/
 # Models (Crucial: Large files should not be uploaded)
 models/
 
-# Datasets
+# Datasets (images and their tag files)
 *.jpg
 *.jpeg
 *.png
 *.webp
 *.caption
-*.txt
+photos/*.txt
+
+# Keep requirements.txt
+!requirements.txt
 
 # Logs
 logs/

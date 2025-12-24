@@ -1,0 +1,13 @@
+gradio
+torch
+torchvision
+torchaudio
+transformers
+accelerate
+safetensors>=0.4.1
+pillow
+timm
+huggingface_hub
+numpy
+pandas
+opencv-python
